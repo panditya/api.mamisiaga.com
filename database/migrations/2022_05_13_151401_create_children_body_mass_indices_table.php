@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Children::class, 'children_id');
             $table->unsignedTinyInteger('age_in_months');
-            $table->unsignedSmallInteger('mass_in_kg')->nullable();
+            $table->unsignedSmallInteger('weight_in_kg')->nullable();
             $table->unsignedSmallInteger('height_in_cm')->nullable();
             $table->unsignedSmallInteger('head_circumference_in_cm')->nullable();
             $table->timestamps();

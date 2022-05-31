@@ -13,7 +13,7 @@ class ChildrenBodyMassIndex extends Model
     protected $fillable = [
         'children_id',
         'age_in_months',
-        'mass_in_kg',
+        'weight_in_kg',
         'height_in_cm',
         'head_circumference_in_cm',
     ];

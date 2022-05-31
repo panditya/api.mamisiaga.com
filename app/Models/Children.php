@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Children extends Model
 {
@@ -27,5 +28,10 @@ class Children extends Model
     public function pregnancy(): BelongsTo
     {
         return $this->belongsTo(Pregnancy::class);
+    }
+
+    public function bodyMassIndices(): HasMany
+    {
+        return $this->hasMany(ChildrenBodyMassIndex::class);
     }
 }
