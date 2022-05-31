@@ -23,4 +23,9 @@ class Children extends Model
     {
         return $this->belongsTo(Mother::class);
     }
+
+    public function pregnancy(): BelongsTo
+    {
+        return $this->belongsTo(Pregnancy::class);
+    }
 }
