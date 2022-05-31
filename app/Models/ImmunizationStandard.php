@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ImmunizationSchedule extends Model
+class ImmunizationStandard extends Model
 {
     use HasFactory;
 

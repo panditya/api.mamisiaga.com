@@ -14,8 +14,8 @@ class Immunization extends Model
         'name'
     ];
 
-    public function schedules(): HasMany
+    public function standards(): HasMany
     {
-        return $this->hasMany(ImmunizationSchedule::class);
+        return $this->hasMany(ImmunizationStandard::class);
     }
 }
