@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -22,6 +23,10 @@ class UserController extends Controller
 
     public function store(StoreRequest $request): JsonResponse
     {
+        $request->merge([
+            'password' => Hash::make($request->password),
+        ]);
+
         User::create($request->all());
 
         return new JsonResponse(null, 201);
