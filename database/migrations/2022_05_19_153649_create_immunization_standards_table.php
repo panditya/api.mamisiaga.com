@@ -14,7 +14,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('immunization_schedules', function (Blueprint $table) {
+        Schema::create('immunization_standards', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Immunization::class, 'immuzation_id');
             $table->unsignedTinyInteger('age_in_months');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('immunization_schedules');
+        Schema::dropIfExists('immunization_standards');
     }
 };
