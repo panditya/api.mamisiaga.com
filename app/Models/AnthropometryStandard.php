@@ -10,7 +10,7 @@ class AnthropometryStandard extends Model
     use HasFactory;
 
     protected $fillable = [
-        'anthropometry_status_id',
+        'anthropometry_id',
         'age_in_months',
         'standard_deviation',
     ];

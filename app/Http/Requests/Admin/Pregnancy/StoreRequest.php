@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Pregnancy;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class StoreRequest extends FormRequest
 {
@@ -16,5 +17,12 @@ class StoreRequest extends FormRequest
         return [
             'date' => ['required', 'date'],
         ];
+    }
+
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'mother_id' => Auth::user()->profile_id
+        ]);
     }
 }

@@ -13,10 +13,10 @@ class Children extends Model
 
     protected $fillable = [
         'mother_id',
-        'number',
         'name',
         'date_of_birth',
         'place_of_birth',
+        'sex',
         'blood_type',
     ];
 

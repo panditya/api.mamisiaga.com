@@ -8,7 +8,7 @@ class UpdateRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     public function rules(): array
@@ -17,6 +17,8 @@ class UpdateRequest extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'place_of_birth' => ['required', 'string', 'max:255'],
             'date_of_birth' => ['required', 'date'],
+            'sex' => ['required'],
+            'blood_type' => ['required']
         ];
     }
 }

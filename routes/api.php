@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResources([
         'users' => UserController::class,
         'mothers' => MotherController::class,
-        'mothers/{mother}/pregnancies' => PregnancyController::class,
+        'pregnancies' => PregnancyController::class,
         'childrens' => ChildrenController::class,
         'childrens/{children}/body-mass-indices' => ChildrenBodyMassIndexController::class,
         'immunizations' => ImmunizationController::class

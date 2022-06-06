@@ -17,13 +17,23 @@ class Mother extends Model
         'date_of_birth',
     ];
 
+    protected $with = [
+        'pregnancies',
+        'childrens'
+    ];
+
     public function user(): MorphOne
     {
-        return $this->morphOne(User::class, 'role');
+        return $this->morphOne(User::class, 'profile');
     }
 
     public function pregnancies(): HasMany
     {
         return $this->hasMany(Pregnancy::class);
+    }
+
+    public function childrens(): HasMany
+    {
+        return $this->hasMany(Children::class);
     }
 }
