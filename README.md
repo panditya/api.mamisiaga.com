@@ -14,7 +14,7 @@
 
 The Digitalized Version of KIA-book for PREGNANT Mother’s and CHILDREN’s Health.
 
-### 🤖 Technologies & Standards
+### Technologies & Standards
 
 1. [PHP PSR2 Coding Style Standard](https://www.php-fig.org/psr/psr-2)
 2. [Laravel](https://laravel.com/docs/9.x) `v9`
@@ -23,9 +23,7 @@ The Digitalized Version of KIA-book for PREGNANT Mother’s and CHILDREN’s Hea
 5. [Github Action CI/CD](https://github.com/features/actions)
 6. [Docker](https://www.docker.com)
 
-<br/>
-
-#### ✔️ Requirement
+#### Requirement
 
 1. PHP `v8.1`
 2. Composer `v2`
@@ -34,7 +32,7 @@ The Digitalized Version of KIA-book for PREGNANT Mother’s and CHILDREN’s Hea
     - [Docker for Linux](https://docs.docker.com/engine/install) `v3.3.3`
     - [Docker for Mac](https://docs.docker.com/docker-for-mac/install) `v20.10`
 
-#### 🖥️ Installation
+#### Installation
 
 1. Clone this repostitory to your project directory.
 2. Run `composer install`
